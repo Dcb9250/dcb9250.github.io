@@ -1,0 +1,49 @@
+ body {
+    overflow: hidden; 
+    background-color: rgb(241, 209, 246);
+    display: flex;
+    justify-content: center; /* centers the sun in the background */
+  }
+  
+  .ball {
+    background-color: rgb(255, 199, 115);
+    border-radius: 50%; 
+    height: 30vh; /* makes the sun the size of the viewport */
+    aspect-ratio: 1 / 1;
+    animation: 8s linear 2s infinite alternate stretch;
+  }
+  
+.surface {
+  background-color: rgb(94, 71, 81);
+  border-radius: 90%; 
+  height: 10vh; 
+  aspect-ratio: 1 / 1;
+}
+
+  @keyframes stretch {
+    from {
+      /* pushes the sun down past the viewport */
+      transform: scaleY(125%);
+
+      
+    }
+
+    25%{
+      
+    }
+    50% {
+      /* returns the sun to its default position */
+      transform: translateY(70vh) scaleY(90%);
+    
+    }
+    75%{
+
+    }
+    to{
+      transform: translateY(0) scaleY(90%);
+      
+    }
+  }
+  rect{
+    color: blueviolet;
+  }
