@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(245, 230, 250);
+    background-image: url("https://i.pinimg.com/originals/f9/4a/ed/f94aed2926b2b65d9fb27bbe87b5f9e0.png");
+    background-size: 20%;
+    background-blend-mode:overlay;
+  
+}
+
+main{
+    border: 25pt double rgb(138, 111, 157);
+    font: message-box;
+    font-family:monospace;
+    font-size:x-large;
+    display:grid;
+    grid: repeat(4, 75px) / auto-flow;
+    padding: 15%;
+    padding-top: 50pt;
+    padding-bottom: 50pt;
+    text-align:center;
+    background-color: rgb(255, 245, 245);
+    margin-left: -10%;
+    margin-right: -10%;
+}
+
+h1{
+    border: 8pt solid rgb(138, 111, 157);
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family:monospace;
+    font-size: xx-large;
+    color: rgb(138, 111, 157);
+    background-color: rgb(255, 245, 245);
+
+
+}
+
+a {
+    color: rgb(138, 111, 157) ;
+    transition: color 0.5s;
+  }
+  
+  a:hover {
+    color: indigo;
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    margin-top: -10%;
+    font-family:monospace;
+    font-size:xx-large;
+    text-align: center;
+  }
+
+  .line{
+    margin-top: -20%;
+    display: flex;
+  }
+
+  .line2{
+    margin-top: -5%;
+    display: flex;
+    flex-direction: row;
+    
+  }
