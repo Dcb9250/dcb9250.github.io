@@ -1,0 +1,51 @@
+ main{
+background-blend-mode:;
+ }
+
+ body{
+background-size: 20%;
+background-position: 20%;
+background-position-x: right;
+display:grid;
+grid-auto-flow: row;
+
+ }
+
+ h1{
+    background-size: 20%;
+    background-position: 20%;
+    background-position-x: right;
+    margin: 0%;  
+    
+ }
+
+#heading {
+    color: white;
+    margin-top: -42%;
+    margin-left: 22%;
+ }
+
+ #p1{
+background-repeat: no-repeat;
+background-size:contain;
+ }
+
+ #p2{
+
+ }
+
+ #p3{
+
+ }
+
+ #p4{
+
+ }
+
+ button{
+
+}
+
+button:hover{
+
+}
