@@ -1,0 +1,63 @@
+#draggable {
+position:static;
+}
+
+
+
+body{
+    background-color: rgb(234, 227, 240);
+    user-select: none;
+    text-align: center;
+
+}
+
+main{
+  width: 50vw;
+  height: 76vh;
+    margin-left: 25vw;
+    margin-right: 25vw ;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://i.pinimg.com/736x/ab/4a/93/ab4a931ad1425eb06ceda67a4be7ca24.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgb(255, 241, 249);;
+    border: 10px ridge rgb(255, 253, 243);
+
+}
+
+
+#orig {
+    background-color: aliceblue;
+    border: 7px dotted rgb(234, 227, 240);
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.21;
+    border: 0px;
+    background: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+    font-size: larger;
+}
+
+
+
+
+
+button {
+  background-color:  aliceblue;
+  border: 3px dotted rgb(234, 227, 240);
+  width: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+}
+
+button:hover{
+  background-color: rgb(179, 202, 222);
+}

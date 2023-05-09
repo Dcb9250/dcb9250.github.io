@@ -1,0 +1,67 @@
+#draggable {
+    position:static;
+    }
+    
+    #draggable1 {
+      position:absolute;
+    }
+
+    body{
+        background-color: rgb(241, 232, 181);
+        user-select: none;
+        text-align: center;
+    
+    }
+    
+    main{
+        margin-left: 10vw;
+        margin-right: 10vw ;
+        background-color: rgb(255, 255, 255);
+        background-image: url(background1.jpg );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display:grid;
+        -ms-grid-column-align: center;
+        grid-template-columns: repeat(15, 5fr);
+        border: 10px ridge rgb(255, 253, 243);
+    
+    }
+    
+    .dropzone {
+    
+        width: 50px;
+        height: 50px;
+        background-color:none;
+        padding: 5px;
+        text-align: left;
+        align-content: flex-start;
+      }
+    
+      .dropzone.dragover {
+        background-color: purple;
+      } 
+    
+    #orig {
+        background-color: aliceblue;
+        border: 7px dotted rgb(241, 232, 181);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        padding-bottom: 150px;
+
+    }
+    
+  
+    
+    button {
+      background-color:  aliceblue;
+      border: 3px dotted rgb(234, 227, 240);
+      width: 150px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-variant: small-caps;
+    }
+    
+    button:hover{
+      background-color: rgb(179, 202, 222);
+    }

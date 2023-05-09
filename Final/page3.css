@@ -1,0 +1,67 @@
+#draggable {
+    position: absolute;
+    }
+
+    #draggable1 {
+      position:relative
+    }
+    
+    body{
+        background-color: rgb(255, 242, 191);
+        user-select: none;
+        text-align: center;
+    
+    }
+    
+    main{
+        margin-left: 10vw;
+        margin-right: 10vw ;
+        background-color: rgb(255, 255, 255);
+        background-image: url(shopping-paper-bag-clip-art-free-png\ copy.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+        background-color: rgb(242, 219, 188);
+        display:grid;
+        grid-template-columns: repeat(10, 10fr);
+        border: 10px ridge rgb(255, 253, 243);
+    
+    }
+    
+    .dropzone {
+    
+        width: 50px;
+        height: 50px;
+        background-color:none;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+      }
+    
+      .dropzone.dragover {
+        background-color: purple;
+      } 
+    
+    #orig {
+        background-color: aliceblue;
+        border: 7px dotted rgb(255, 242, 191);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        padding-bottom: 75px;
+        margin-top: -5%;
+    }
+    
+
+    
+    button {
+      background-color:  aliceblue;
+      border: 3px dotted rgb(234, 227, 240);
+      width: 150px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-variant: small-caps;
+    }
+    
+    button:hover{
+      background-color: rgb(179, 202, 222);
+    }
