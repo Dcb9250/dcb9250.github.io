@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    background-color: rgb(148, 121, 176);
+    background-image: url("images/Infinite White Floor Spotlight Backgrounds.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode:overlay;
+
+}
+
+.screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.screen.active {
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+    font-size: 150px;
+    white-space: nowrap;
+    font-family: 'Rubik80s';
+    color: rgb(176, 134, 155);
+    text-shadow:0 0 90px rgb(206, 164, 215);
+}
+.records-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.record {
+    border-radius: 50%;
+    transition: 
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.record.center {
+    transform: scale(1.1);
+}
+
+.record.side {
+    transform: scale(0.9);
+}
+
+.record.clickable {
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 52px;
+    height: 27px;
+    transition: opacity 0.2s;
+    stroke: none;
+    
+}
+
+.arrow-btn:hover:not(:disabled) {
+    opacity: 0.7;
+}
+
+.arrow-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.instruction {
+    font-size: 30px;
+    color: rgb(176, 134, 155);
+    white-space: nowrap;
+    font-family: 'Rubik80s';
+}
+
+.back-btn {
+    position: absolute;
+    background: #d9d9d9;
+    height: 50px;
+    left: 58px;
+    border-radius: 15px;
+    top: 90%;
+    width: 205px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.back-btn-text {
+    font-size: 30px;
+    color: rgb(57, 24, 88);
+    font-family: 'Rubik80s' ;
+}
+
+.song-circle {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.song-title {
+    position: absolute;
+    right: 2%;
+    font-size: 90px;
+
+    top: 5%;
+    white-space: nowrap;
+    font-family: 'Rubik80s' ;
+}
+
+.song-description {
+    position: absolute;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(70, 18, 118);
+    top: 35%;
+    width: 600px;
+    white-space: pre-wrap;
+    font-family: 'Handjet', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.play-btn{
+    position: absolute;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    left: 67%;
+    top: 75%;
+    width: 250px;
+    background:none;
+    border: none;
+    transform: rotate(90deg);
+}
+
+.play-btn:hover{
+    opacity:0.8 ;
+}
+
+.play-text {
+    transform: rotate(270deg);
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    white-space: nowrap;
+}
+
+.songScreen {
+    position: relative;
+    overflow: hidden;
+
+}
+
+@font-face {
+    font-family: 'Rubik80s';
+    src: url('fonts/Rubik80sFade-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Handjet';
+    src:url('fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf');
+  }

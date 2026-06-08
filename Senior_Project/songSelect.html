@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Selection</title>
+
+    <link rel="stylesheet" type="text/css" href="/songSelect.css">
+
+</head>
+<body>
+    <!-- Selection Screen -->
+    <div id="selectionScreen" class="screen active">
+        <h1>Select a Record</h1>
+        <div class="records-container" id="recordsContainer"></div>
+
+        <div class="controls">
+            <button class="arrow-btn" id="leftBtn">
+                <svg fill="none" viewBox="0 0 62 36.8198">
+                    <path d="M0.732233 16.6421C-0.244078 17.6184 -0.244078 19.2014 0.732233 20.1777L16.6421 36.0876C17.6184 37.0639 19.2014 37.0639 20.1777 36.0876C21.154 35.1113 21.154 33.5283 20.1777 32.552L6.03553 18.4099L20.1777 4.26777C21.154 3.29146 21.154 1.70854 20.1777 0.732233C19.2014 -0.244078 17.6184 -0.244078 16.6421 0.732233L0.732233 16.6421ZM59.5 20.9099C60.8807 20.9099 62 19.7906 62 18.4099C62 17.0292 60.8807 15.9099 59.5 15.9099V18.4099V20.9099ZM2.5 18.4099V20.9099H59.5V18.4099V15.9099H2.5V18.4099Z" fill="black" />
+                </svg>
+            </button>
+            <p class="instruction">Press keys to scroll</p>
+            <button class="arrow-btn" id="rightBtn">
+                <svg fill="none" viewBox="0 0 62 36.8198">
+                    <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM61.2678 20.1777C62.2441 19.2014 62.2441 17.6184 61.2678 16.6421L45.3579 0.732233C44.3816 -0.244078 42.7986 -0.244078 41.8223 0.732233C40.846 1.70854 40.846 3.29146 41.8223 4.26777L55.9645 18.4099L41.8223 32.552C40.846 33.5283 40.846 35.1113 41.8223 36.0876C42.7986 37.0639 44.3816 37.0639 45.3579 36.0876L61.2678 20.1777ZM2.5 18.4099V20.9099H59.5V18.4099V15.9099H2.5V18.4099Z" fill="black" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Song Screen -->
+    <div id="songScreen" class="screen">
+        <button class="back-btn" id="backBtn">
+            <p class="back-btn-text">Back</p>
+        </button>
+
+        <svg class="song-circle" id="songCircle" fill="none" preserveAspectRatio="none" viewBox="0 0 708 708">
+            <circle cx="354" cy="354" r="354" />
+        </svg>
+
+        <p class="song-title" id="songTitle">Song Name</p>
+
+        <div id="songCircle"></div>
+
+        <div id="bgBlur"></div>
+
+        <p class="song-description" id="songDesc">Song Desc</p>
+        <button class="play-btn" id="playBtn">
+            <svg width="116" height="108" viewBox="0 0 116.163 107.695">
+                <path id="playBtnSvg" d="M49.3122 5.19349C53.1077 -1.73117 63.0549 -1.73116 66.8504 5.19349L114.917 92.8884C118.57 99.5526 113.748 107.695 106.148 107.695H10.0142C2.41455 107.695 -2.4077 99.5526 1.24507 92.8884L49.3122 5.19349Z" fill="#D9D9D9" />
+            </svg>
+
+            </div>
+        </button>
+
+
+    </div>
+
+    <script src="/songSelect.js"></script>
+
+</body>
+</html>

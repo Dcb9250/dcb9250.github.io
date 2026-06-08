@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+  }
+    
+  body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.js{
+    height: auto;
+    width: auto;
+    z-index: 0;
+}
+
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.03) 1px,
+      transparent 2px,
+      transparent 4px
+  );
+  z-index: 999;
+}
+
+@font-face {
+  font-family: 'Rubik80s';
+  src: url('fonts/Rubik80sFade-Regular.ttf');
+}
